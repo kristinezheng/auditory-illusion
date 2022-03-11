@@ -71,24 +71,48 @@ Released   : 20140221
 
 				<!-- Here is some template code to help you insert sounds and images into the page: -->
 				<!-- How to insert sounds -->
-				<audio controls>
+				<!--audio controls>
 				  <source src="TODO:my_sound_name.wav" type="audio/wav">
 				Your browser does not support the audio element.
-				</audio><br>
+				</audio><br>-->
 				<!--WAV files will work best-->
 
+				<p>Spectrograms</p>
+				<p>Click on each spectrogram image to play sound</p>
+
+				<!-- How to insert images that play sounds when you click them -->
+				<p>F0 = 200 Hz, Harmonic number 2</p>
+				<audio id="s1">
+				  <source src="hz200_num2.wav" type="audio/wav"/>
+				</audio>
+				<img src="hz200_num2.png" width=500 onClick="document.getElementById('s1').play(); return false;" style="cursor: pointer;"/><br>
+
+				<p>F0 = 200 Hz, Harmonic number 15</p>
+				<audio id="s1">
+				  <source src="hz200_num15.wav" type="audio/wav"/>
+				</audio>
+				<img src="hz200_num15.png" width=500 onClick="document.getElementById('s1').play(); return false;" style="cursor: pointer;"/><br>
+				<!-- you can use any short name in place of "s1" for audio id, it's just how the browser knows which sound to play using "getElementByID" -->
+				
+				<p>F0 = 900 Hz, Harmonic number 2</p>
+				<audio id="s1">
+				  <source src="hz900_num2.wav" type="audio/wav"/>
+				</audio>
+				<img src="hz900_num2.png" width=500 onClick="document.getElementById('s1').play(); return false;" style="cursor: pointer;"/><br>
+
+				<p>F0 = 900 Hz, Harmonic number 15</p>
+				<audio id="s1">
+				  <source src="hz900_num15.wav" type="audio/wav"/>
+				</audio>
+				<img src="hz900_num15.png" width=500 onClick="document.getElementById('s1').play(); return false;" style="cursor: pointer;"/><br>
+				
+
 				<!-- How to insert images:-->
+				<p>Normal Image</p>
 				<img src="cat_img.jpeg" width=500/><br>
 				<!--You can use the width parameter to change the size of your image-->
 				<!--src could be a gif, png, jpeg, etc.-->
-
-				<!-- How to insert images that play sounds when you click them -->
-				<audio id="s1">
-				  <source src="TODO:my_sound_name.wav" type="audio/wav"/>
-				</audio>
-				<img src="TODO:my_image_name.png" width=500 onClick="document.getElementById('s1').play(); return false;" style="cursor: pointer;"/><br>
-				<!-- you can use any short name in place of "s1" for audio id, it's just how the browser knows which sound to play using "getElementByID" -->
-
+			
 				<p>Glasberg, Brian, et al. (1986). Thresholds for hearing mistuned partials as separate tones in harmonic complexes. Acoustical Science of America. https://asa.scitation.org/doi/10.1121/1.394043.<p>
 
 		</div>
